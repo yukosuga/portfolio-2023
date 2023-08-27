@@ -3,10 +3,231 @@
 // to customize it as you may want.
 
 @import "variables";
+@import "./base";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 // Write your sass code here or import partials
 
+body,
+button {
+  color: $fontGrey;
+  font-size: 2rem;
+  font-family: $fontComfortaa;
+  text-align: left;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+  background-color: $bgPink;
+}
+
 h1 {
-  color: tomato;
+  font-family: $fontCinzelDecorative;
+  font-size: 6rem;
+  color: $fontGrey;
+
+  span {
+    font-size: 8rem;
+    color: $fontGrey;
+    color: $fontPink;
+    text-shadow: 5px 5px 4px $fontGrey;
+  }
+}
+
+.headerTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-size: 4rem;
+    font-family: $fontCinzelDecorative;
+
+    span {
+      font-size: 6rem;
+      color: $fontPink;
+    }
+  }
+
+  p {
+    margin: 0 2rem;
+    font-size: 2.5rem;
+    vertical-align: middle;
+  }
+}
+
+nav {
+  a {
+    font-size: 2.5rem;
+    color: $fontGrey;
+    text-decoration: none;
+    padding-left: 0.5rem;
+
+    &:hover {
+      color: $fontPink;
+    }
+  }
+}
+
+section {
+  padding: 5rem 10rem;
+}
+
+#about {
+  img {
+    width: 30rem;
+    margin-bottom: 1.5rem;
+  }
+
+  div,
+  p {
+    margin: 1rem 0 1rem 1.5rem;
+  }
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-left: 1.5rem;
+}
+
+h4 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 0.5rem 0 2rem 1.5rem;
+}
+
+.recommendations {
+  padding: 3rem;
+
+  p {
+    font-size: 1.9rem;
+    font-style: italic;
+    background-color: white;
+    box-shadow: 0 0 1px rgba(134, 133, 133, 0.588);
+    padding: 1.5rem;
+  }
+
+  span {
+    content: "";
+    display: block;
+    height: 1rem;
+  }
+}
+
+#about,
+.apps,
+.lp {
+  background-color: $bgWhite;
+}
+
+#projects,
+.hp,
+#contact,
+footer {
+  background-color: $bgPink;
+}
+
+#projects,
+.apps,
+.contentHPs,
+.contentApps {
+  img {
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    width: 100%;
+  }
+}
+
+.appImage {
+  text-align: center;
+  img {
+    width: 70%;
+  }
+}
+
+.contentProjects,
+.contentApps {
+  p:nth-of-type(2) {
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-top: -1rem;
+  }
+}
+
+.contentHPs,
+.contentLPs {
+  margin-bottom: 5rem;
+
+  img {
+    width: 80%;
+    margin-bottom: 5rem;
+  }
+}
+
+button {
+  cursor: pointer;
+  background-color: #f0f0f3;
+  width: 100%;
+  height: 6rem;
+  margin: 2rem 0 5rem 0;
+
+  border-style: none;
+  border-radius: 5px;
+  box-shadow: inset 10px 10px 10px 0 #ffffff, inset -10px -10px 10px 0 #cfcfdd9e,
+    10px 10px 30px 0 #cfcfdd9e, -10px -10px 30px 0 #ffffff;
+
+  &:hover {
+    color: $fontPink;
+    box-shadow: inset 10px 10px 10px 0 #cfcfdd9e,
+      inset -10px -10px 10px 0 #ffffff, 10px 10px 30px 0 #ffffff,
+      -10px -10px 30px 0 #cfcfdd9e;
+
+    transition-property: box-shadow;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+  }
+
+  &:before {
+    margin: 0 1rem 0 3rem;
+    content: "\f138";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+footer {
+  div:nth-of-type(1) {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+  }
+
+  div:nth-of-type(2) {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+  }
+
+  img {
+    width: 4.4rem;
+    padding: 0.1rem;
+  }
+
+  p {
+    margin: 0.8rem;
+  }
 }
