@@ -19,19 +19,54 @@
 </head>
 
 <body>
-  <header>
-    <h1><span>Y</span>uko <span>S</span>uga</h1>
+  <header class="headerMobile">
+    <div class="headerNav">
+      <h1><span>Y</span>uko <span>S</span>uga</h1>
+      <nav>
+        <a href="#about">about</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
+      </nav>
+    </div>
+
+    <div class="headerTitle">
+      <h2><span>W</span>eb Development</h2>
+      <h2><span>W</span>eb Design</h2>
+    </div>
+  </header>
+
+  <header class="headerTablet">
+    <div class="headerNav">
+      <h1><span>Y</span>uko <span>S</span>uga</h1>
+      <nav>
+        <a href="#about">about</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
+      </nav>
+    </div>
+
+    <div class="headerTitle">
+      <h2><span>W</span>eb Development</h2>
+      <h2><span>W</span>eb Design</h2>
+    </div>
+  </header>
+
+  <header class="headerDesktop">
+    <div class="headerNav">
+      <h1><span>Y</span>uko <span>S</span>uga</h1>
+      <nav>
+        <a href="#about">about</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
+      </nav>
+    </div>
+
     <div class="headerTitle">
       <h2><span>W</span>eb Development</h2>
       <p></p>
       <h2><span>W</span>eb Design</h2>
     </div>
 
-    <nav>
-      <a href="#about">about</a>
-      <a href="#projects">projects</a>
-      <a href="#contact">contact</a>
-    </nav>
   </header>
 
   <main>
@@ -336,13 +371,14 @@
     <section id="contact">
       <div>
         <h3>Get in Touch</h3>
-        <img src="../img/favicon.png" alt="A logo of YS">
+        <img src="../img/favicon-100px.png" alt="A logo of YS">
         <h4>Yuko Suga</h4>
         <div>
-          <a href="https://github.com/yukosuga" target="_blank"><img src="../img/github-circle.png" alt="Github icon" /></a>
+          <a href="https://github.com/yukosuga" target="_blank"><img src="../img/github-circle.png"
+              alt="Github icon" /></a>
           <a href="https://www.linkedin.com/in/yuko-suga/" target="_blank"><img src="../img/linkedin-circle.png"
               alt="LinkedIn icon" /></a>
-        </div>    
+        </div>
 
         <form action="https://formspree.io/f/mknlrava" method="POST" class="contactForm">
           <label>
@@ -352,9 +388,9 @@
             <input type="email" name="email" placeholder="Your Email*" required>
           </label>
           <label>
-          <textarea name="message" placeholder="Your Message*" cols="30" rows="10" required></textarea>
-        </label>
-        <button type="submit">Send</button>
+            <textarea name="message" placeholder="Your Message*" cols="30" rows="10" required></textarea>
+          </label>
+          <button type="submit">Send</button>
         </form>
       </div>
     </section>
@@ -368,9 +404,13 @@
     </div>
 
     <div>
-      <p>+49(0)176 47553344</p>
+      <a href="https://webpoppins.com/" target="_blank">
+        <p>www.webpoppins.com</p>
+      </a>
+      <a href="tel:+4917647553344">
+        <p>+49(0)176 47553344</p>
+      </a>
       <p>Joachimstr. 36, 40545</p>
-      <p>www.webpoppins.com</p>
       <p>Steuernummer: 10350654274</p>
     </div>
   </footer>
