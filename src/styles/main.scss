@@ -66,6 +66,8 @@ nav {
   a {
     font-size: 2.5rem;
     color: $fontGrey;
+    transition: color 1s ease;
+
     text-decoration: none;
     padding-left: 0.5rem;
 
@@ -76,7 +78,7 @@ nav {
 }
 
 section {
-  padding: 5rem 10rem;
+  padding: 5rem 2rem;
 }
 
 #about {
@@ -163,7 +165,7 @@ footer {
 .contentHPs,
 .contentLPs {
   margin-bottom: 5rem;
-
+  text-align: center;
   img {
     width: 80%;
     margin-bottom: 5rem;
@@ -178,7 +180,7 @@ button {
   margin: 2rem 0 5rem 0;
 
   border-style: none;
-  border-radius: 5px;
+  border-radius: .5rem;
   box-shadow: inset 10px 10px 10px 0 #ffffff, inset -10px -10px 10px 0 #cfcfdd9e,
     10px 10px 30px 0 #cfcfdd9e, -10px -10px 30px 0 #ffffff;
 
@@ -188,11 +190,11 @@ button {
       inset -10px -10px 10px 0 #ffffff, 10px 10px 30px 0 #ffffff,
       -10px -10px 30px 0 #cfcfdd9e;
 
-    transition-property: box-shadow;
-    transition-duration: 1s;
+      transition-property: box-shadow;
+      transition-duration: 1s;
     transition-timing-function: ease-in-out;
   }
-
+  
   &:before {
     margin: 0 1rem 0 3rem;
     content: "\f138";
@@ -206,6 +208,46 @@ button {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  
+  h3,
+  h4 {
+    margin-left: 0;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    border-radius: .5rem;
+    border: 0.1rem solid rgba(233, 230, 230, 0.964);
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border: 0.1rem solid rgba(134, 133, 133, 0.588);
+  }
+
+  a img {
+    width: 3.5rem;
+  }
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact,
+footer {
+  img:hover {
+    transform: scale(1.15);
+    transition: transform 2s ease;
+  }
+}
+
+#contact {
 }
 
 footer {
@@ -214,20 +256,32 @@ footer {
     bottom: 0;
     display: flex;
   }
-
+  
   div:nth-of-type(2) {
     font-size: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: right;
   }
-
-  img {
-    width: 4.4rem;
-    padding: 0.1rem;
-  }
-
+  
   p {
     margin: 0.8rem;
   }
+
+  img {
+    width: 4.4rem;
+    height: 4.4rem;
+    padding: 0.1rem;
+  }
 }
+
+@media only screen and (min-width: 992px) {
+  section {
+    padding: 5rem 10rem;
+  }
+  .contactForm {
+    width: 50%;
+    margin: 0 auto;
+  }
+  }
+
