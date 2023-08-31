@@ -20,6 +20,7 @@ button {
     font-size: 2.5rem;
     font-weight: bold;
   }
+
   h4 {
     font-size: 2rem;
   }
@@ -45,7 +46,6 @@ button {
       font-family: $fontCinzelDecorative;
       font-size: 4.5rem;
       color: $fontGrey;
-
       span {
         font-size: 7rem;
         color: $fontPink;
@@ -56,13 +56,11 @@ button {
     nav {
       display: flex;
       flex-direction: column;
-
       a {
         font-size: 2.5rem;
         color: $fontGrey;
         text-decoration: none;
         padding-left: 0.5rem;
-
         &:hover {
           color: $fontPink;
           transition: color 1s ease;
@@ -82,12 +80,10 @@ button {
     h2 {
       font-size: 3.5rem;
       font-family: $fontCinzelDecorative;
-
       span {
         font-size: 5rem;
         color: $fontPink;
       }
-
       &:nth-of-type(2) {
         margin-top: 1.5rem;
       }
@@ -194,7 +190,6 @@ button {
     margin: 0 0.5rem;
     vertical-align: middle;
   }
-
   .titleSpace2 {
     margin: 0 2rem;
     vertical-align: middle;
@@ -217,7 +212,6 @@ section {
     font-size: 2.1rem;
     font-weight: bold;
   }
-
   p {
     font-size: 1.8rem;
     font-style: italic;
@@ -231,23 +225,18 @@ section {
   h4:nth-of-type(1) {
     margin: 1rem 0 0.5rem;
   }
-
   h4:nth-of-type(2) {
     display: none;
   }
-
   h4:nth-of-type(3) {
     margin-bottom: 2rem;
   }
-
   p:nth-of-type(1) {
     margin: 0.5rem 0 0;
   }
-
   p:nth-of-type(2) {
     display: none;
   }
-
   p:nth-of-type(3) {
     margin-bottom: 2rem;
   }
@@ -362,7 +351,6 @@ button {
   img {
     width: 10rem;
   }
-
   img:nth-of-type(1) {
     margin: 2rem 0;
   }
@@ -428,7 +416,6 @@ footer {
   a {
     text-decoration: none;
     color: $fontGrey;
-
     &:hover {
       color: $fontPink;
       transition: color 1s ease;
@@ -442,13 +429,12 @@ footer {
   }
 }
 
-// Smaller Smart Phone
+// Smaller Phone
 @media only screen and (max-width: 575px) {
   .header {
     .headerNav {
       h1 {
         font-size: 3.6rem;
-
         span {
           font-size: 5.6rem;
         }
@@ -458,7 +444,6 @@ footer {
     .headerTitle {
       h2 {
         font-size: 2.8rem;
-
         span {
           font-size: 4rem;
         }
@@ -496,31 +481,6 @@ footer {
     padding: 5rem 8rem;
   }
 
-  .profileTitle div {
-    &:nth-of-type(1) {
-      margin-top: 1rem;
-    }
-    &:nth-of-type(2) {
-      margin: 0.5rem 0 1rem;
-    }
-    &:nth-of-type(1),
-    &:nth-of-type(2) {
-      display: flex;
-      flex-direction: row;
-    }
-    h4:nth-of-type(1),
-    h4:nth-of-type(3),
-    p:nth-of-type(1),
-    p:nth-of-type(3) {
-      margin: 0;
-    }
-    h4:nth-of-type(2),
-    p:nth-of-type(2) {
-      display: flex;
-      margin: 0 0.5rem;
-    }
-  }
-
   .contactForm {
     width: 70%;
     margin: 0 auto;
@@ -541,6 +501,7 @@ footer {
   }
 }
 
+// Desktop
 @media only screen and (min-width: 1024px) {
   .header {
     position: static;
@@ -600,7 +561,30 @@ footer {
   section {
     padding: 5rem 10rem;
   }
+}
 
+.contactForm {
+  width: 50%;
+  margin: 0 auto;
+}
+
+footer {
+  div:nth-of-type(2) {
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-bottom: 0;
+  }
+
+  p {
+    margin: 0.8rem;
+  }
+}
+
+// Tablet and Desktop
+@media only screen and (min-width: 768px) and (max-width: 1023px),
+  only screen and (min-width: 1024px) {
   .profileTitle div {
     &:nth-of-type(1) {
       margin-top: 1rem;
@@ -624,24 +608,5 @@ footer {
       display: flex;
       margin: 0 0.5rem;
     }
-  }
-}
-
-.contactForm {
-  width: 50%;
-  margin: 0 auto;
-}
-
-footer {
-  div:nth-of-type(2) {
-    font-size: 1.8rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    padding-bottom: 0;
-  }
-
-  p {
-    margin: 0.8rem;
   }
 }
