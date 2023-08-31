@@ -34,55 +34,22 @@ button {
 
   width: 100%;
   height: 100vh;
-  // padding: 2rem;
   background-color: $bgPink;
 
-  // .headerNav {
-  //   display: flex;
-  //   flex-direction: row;
-  //   justify-content: space-between;
+  .headerSticky {
+    position: fixed;
 
-  //   h1 {
-  //     font-family: $fontCinzelDecorative;
-  //     font-size: 4.5rem;
-  //     color: $fontGrey;
-  //     span {
-  //       font-size: 7rem;
-  //       color: $fontPink;
-  //       text-shadow: 5px 5px 4px $fontGrey;
-  //     }
-  //   }
-
-  //   nav {
-  //     display: flex;
-  //     flex-direction: column;
-  //     a {
-  //       font-size: 2.5rem;
-  //       text-align: right;
-  //       color: $fontGrey;
-  //       text-decoration: none;
-  //       padding-left: 0.5rem;
-  //       &:hover {
-  //         color: $fontPink;
-  //         transition: color 1s ease;
-  //       }
-  //     }
-  //   }
-  // }
-.headerSticky {
-  background-color: #fff6f6ef;
-
-  width: 100vw;
-  height: 14rem;
-  padding: 0;
-  position: fixed;
-}
+    width: 100vw;
+    height: 14rem;
+    background-color: #fff6f6ef;
+    padding: 0;
+  }
   .headerNav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-    
+
     .headerLogo {
       position: fixed;
       top: 2rem;
@@ -93,18 +60,14 @@ button {
       top: 2rem;
       right: 2rem;
     }
-    
+
     h1 {
-      font-family: $fontCinzelDecorative;
-      // font-size: 4.5rem;
-      font-size: 3.3rem;
-
       color: $fontGrey;
+      font-size: 3.3rem;
+      font-family: $fontCinzelDecorative;
       span {
-        font-size: 5rem;
-        // font-size: 7rem;
-
         color: $fontPink;
+        font-size: 5rem;
         text-shadow: 5px 5px 4px $fontGrey;
       }
     }
@@ -113,9 +76,9 @@ button {
       display: flex;
       flex-direction: column;
       a {
+        color: $fontGrey;
         font-size: 2.5rem;
         text-align: right;
-        color: $fontGrey;
         text-decoration: none;
         padding-left: 0.5rem;
         &:hover {
@@ -125,7 +88,6 @@ button {
       }
     }
   }
-
 
   .headerTitle {
     display: flex;
@@ -139,8 +101,8 @@ button {
       font-size: 3.3rem;
       font-family: $fontCinzelDecorative;
       span {
-        font-size: 5rem;
         color: $fontPink;
+        font-size: 5rem;
       }
       &:nth-of-type(2) {
         margin-top: 1.5rem;
@@ -441,7 +403,6 @@ button {
 .contactForm {
   display: flex;
   flex-direction: column;
-  // width: 100%;
 }
 
 #contact a,
